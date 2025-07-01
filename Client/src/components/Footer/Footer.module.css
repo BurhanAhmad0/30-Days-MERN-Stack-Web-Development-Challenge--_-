@@ -1,0 +1,48 @@
+.footer {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .socialIcons {
+    margin-bottom: 10px;
+  }
+}
+
+.footer .socialMedia p {
+  font-size: 13px;
+  color: gray;
+  margin-top: 10px;
+}
+
+.footer .socialIcons {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.footer .socialIcons a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .socialIcons a img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer .copyright p {
+  font-size: 13px;
+  color: gray;
+  margin-top: 10px;
+}

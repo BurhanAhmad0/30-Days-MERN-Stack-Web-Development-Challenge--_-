@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+}
+
+.App {
+  width: 80%;
+}
+
+@media screen and (max-width: 1060px) {
+  .App {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .container {
+    position: relative;
+  }
+
+  .App {
+    width: 100%;
+  }
+}
+
+.App h1 {
+  font-size: 3.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.App .progessBar {
+  background-color: #007bff;
+  height: 7px;
+  width: 0%;
+  transition: all;
+  transition-duration: 1s;
+}

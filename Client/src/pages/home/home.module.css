@@ -1,0 +1,47 @@
+/* Home.css */
+.homeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.homeContent {
+    text-align: center;
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.homeContent h1 {
+    color: #333333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #666666;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.getStartedButton {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.getStartedButton:hover {
+    background-color: #333333;
+}

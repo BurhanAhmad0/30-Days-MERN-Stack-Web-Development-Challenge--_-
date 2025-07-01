@@ -1,0 +1,160 @@
+.productCatalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.addNewProduct {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addButton {
+    background-color: #007bff;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.productCard {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.productTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #333333;
+}
+
+.productDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666666;
+}
+
+/* Add Product Card (visible) */
+.addProductCard {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    transition: all 0.3s ease;
+}
+
+/* Hidden state for Add Product */
+.addProductCardNotActive {
+    display: none;
+}
+
+/* Form layout */
+.addProductForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Title input */
+.addProductTitle {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.addProductTitle:focus {
+    border-color: #007bff;
+}
+
+/* Description textarea */
+.addProductDescription {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    min-height: 120px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.addProductDescription:focus {
+    border-color: #007bff;
+}
+
+/* Submit button */
+.addButton {
+    background-color: #007bff;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pageButton {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.pageButton:hover {
+    background-color: #f0f0f0;
+}
+
+.activePage {
+    background-color: #0070f3;
+    color: white;
+    border-color: #0070f3;
+}

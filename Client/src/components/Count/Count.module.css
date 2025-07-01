@@ -1,0 +1,28 @@
+.count {
+    font-size: 2rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+.count h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.count .countBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.count .countBtns button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
