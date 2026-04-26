@@ -1,8 +1,8 @@
 // Index
 // Packages
+const express = require("express");
 const dotenv = require("dotenv");
 dotenv.config();
-const app = require("./");
 const http = require("http");
 const { Server } = require("socket.io");
 const bodyParser = require("body-parser");
